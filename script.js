@@ -2,6 +2,6 @@
 // h1.innerHTML='hlww from js'
 // document.body.appendChild(h1)
 
-import a from './app.js'
+import user from './app.js'
 
-console.log(a);
+console.log(user);
