@@ -1,9 +1,10 @@
+
 import React from 'react'
 
 const App = () => {
   return (
     <div>
-      App
+      <div className='card'><h1>Sanaaa</h1></div>
     </div>
   )
 }
