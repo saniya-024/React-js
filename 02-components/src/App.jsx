@@ -6,8 +6,9 @@ const App = () => {
   const user='harsh'
   return (
     <div>
-      <
-        <Card/>
+      <navbar/>
+
+        <card/>
         
       </div>
     
