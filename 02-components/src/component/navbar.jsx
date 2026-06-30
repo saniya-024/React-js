@@ -4,10 +4,10 @@ const navbar = () => {
   return (
     <div>
       <div className="nav">
-        This is nav
+        This is nav  
       </div>
     </div>
   )
 }
 
-export default navbar
+export default navbar    
