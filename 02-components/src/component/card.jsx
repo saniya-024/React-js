@@ -1,4 +1,11 @@
-function Card(){
-    return'hi im card'
+import React from 'react'
+
+const card = () => {
+  return (
+    <div>
+      
+    </div>
+  )
 }
-export default Card;
+
+export default card

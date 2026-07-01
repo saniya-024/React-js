@@ -3,11 +3,10 @@ import React from 'react'
 const navbar = () => {
   return (
     <div>
-      <div className="nav">
-        This is nav  
-      </div>
+      this is vasjdkf
+      qewrethyjuh
     </div>
   )
 }
 
-export default navbar    
+export default navbar
