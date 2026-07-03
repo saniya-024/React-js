@@ -8,9 +8,9 @@ const App = () => {
     <div className='parent'>
     
       
-      <Card />
-      <Navbar/>
-    </div>
+      <Card user='ammii' age={18} />
+      <Card user='SAmm' age={18} />
+      <Navbar/>     </div>
   
     
   )
