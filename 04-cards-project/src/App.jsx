@@ -1,121 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+const App = () => {
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <div className='parent'>
+      <div className="card">
+        <div className="top">
+          <img src="data:image/png;base64,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" alt=""/>
+          <button>Save</button>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+        <div className="center">
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      </div>
+      
+    </div>
   )
 }
 
