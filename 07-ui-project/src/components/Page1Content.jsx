@@ -1,9 +1,12 @@
 import React from 'react'
+import LeftContent from './LeftContent'
+import RightContent from './RightContent'
 
 const Page1Content = () => {
   return (
-    <div>
-      Page1Content
+    <div className='py-3 h-[90vh] bg-amber-950 px-18'>
+      <LeftContent />
+      <RightContent />
     </div>
   )
 }
