@@ -1,8 +1,10 @@
 import React from 'react'
+import Section1 from './components/Section1.jsx'
 
 const App = () => {
   return (
-    <div>App
+    <div>
+      <Section1 />
       
     </div>
   )
