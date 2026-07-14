@@ -4,9 +4,11 @@ const App = () => {
   function btnClicked(){
     console.log('button is clicked');
   }
+  
   return (
     <div>
-      <button>Click here</button>
+      <button onclick={btnClicked()}>Click here</button>
+      <button onClick={btnClicked()}>explore this</button>
     </div>
   )
 }
