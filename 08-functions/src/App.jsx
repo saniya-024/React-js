@@ -7,8 +7,7 @@ const App = () => {
   
   return (
     <div>
-      <button onclick={btnClicked()}>Click here</button>
-      <button onClick={btnClicked()}>explore this</button>
+      <input type="text" placeholder='Enter Name' />
     </div>
   )
 }
