@@ -1,21 +1,15 @@
 import React from 'react'
 
 const App = () => {
-  function inputChanging(){
-console.log('input is changed');
+  function inputChanging(val){
+console.log(val);
   }
   
   
   return (
     <div>
-      <input onChange={function(elem) {
-        console.log(elem.target.value);
-
-      }}
-        
-        type="text" 
-        placeholder='Enter Name' />
-    </div>
+<div className='box'></div>
+  </div>  
   )
 }
 
