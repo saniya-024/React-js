@@ -1,10 +1,11 @@
 import React from 'react'
 
 const App = () => {
-  function getData(){
-    const data=fetch('https://jsonplaceholder.typicode.com/todos/1')
+  const getData=async()=> {
 
-    console.log(data);
+ const response= await fetch('https://jsonplaceholder.typicode.com/todos/1')
+
+    console.log(response);
   }
   return (
     <div>
