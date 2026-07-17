@@ -1,11 +1,11 @@
 import React from 'react'
+import axios from 'axios'
 
 const App = () => {
   const getData=async()=> {
 
- const response= await fetch('https://jsonplaceholder.typicode.com/todos/')
-const data= await response.json()
-    console.log(data);
+ const response= await axios.get('https://dummyjson.com/users')
+ console.log(response);
   }
   return (
     <div>
