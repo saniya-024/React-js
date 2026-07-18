@@ -9,7 +9,10 @@ const App = () => {
 
   return (
     <div>
-      App
+      <h1>{num}</h1>
+    <button onClick={()=>{
+
+    }}>Click</button>
     </div>
   )
 }
