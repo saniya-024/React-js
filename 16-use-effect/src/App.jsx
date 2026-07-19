@@ -1,18 +1,12 @@
 import React from 'react'
-import { useEffect } from 'react'
 
 const App = () => {
-  useEffect(function(){
-    console.log('use effect is running');
-  })
-  
-
   return (
     <div>
-      <h1>{num}</h1>
-    <button onClick={()=>{
-
-    }}>Click</button>
+      <h1>A is {a}</h1>
+      <h1>B is {b}</h1>
+      <button>Change A</button>
+      <button>Change B</button>
     </div>
   )
 }
